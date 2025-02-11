@@ -64,6 +64,8 @@ class GildedRose(object):
                 item.quality -= 2
             if item.quality < 0:
                 item.quality = 0
+        elif item.name == "Sulfuras, Hand of Ragnaros":  # Corrected line
+            pass  # Sulfuras does not change
         else:
             if item.quality > 0:
                 item.quality -= 1
